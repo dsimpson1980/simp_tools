@@ -61,3 +61,10 @@ def coerce_time(candidate):
             raise ValueError(
                 'Could not coerce time from candidate %s' % candidate)
     return time
+
+
+def minutes_in_freq(freq):
+    freqs = dict(D=1440, H=60, T=1)
+    result = freqs.get(
+        freq, pandas.tseries.frequencies.to_offset(freq).nanos * 1e-9 / 60)
+    return result
