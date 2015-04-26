@@ -7,7 +7,7 @@ with open('meta.yaml') as f:
 setup(name=meta['package']['name'],
       version=meta['package']['version'],
       description='Simple tools for sharing between repos',
-      url='http://github.com/dsimpson1980/simp_tools',
+      url=meta['source']['url'],
       author='Dave Simpson',
       author_email='davesimpson1980@gmail.com',
       license='MIT',
