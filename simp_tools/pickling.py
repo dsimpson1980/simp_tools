@@ -27,5 +27,5 @@ def dump(obj, filepath):
     filepath: str
         The filepath to dump the pickled object to
     """
-    with open(filepath, 'w') as f:
+    with open(filepath, 'wb') as f:
         cPickle.dump(obj, f, cPickle.HIGHEST_PROTOCOL)
