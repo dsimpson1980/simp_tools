@@ -1,6 +1,6 @@
 package:
   name: simp_tools
-  version: 0.1.1.1
+  version: 0.1.1.2
 
 source:
   git_url: https://github.com/dsimpson1980/simp_tools.git
